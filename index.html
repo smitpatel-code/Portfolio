@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Smit Patel- Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Smit's Portfolio</div>
+            <div class="right">
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="#Home">Home</a></li>
+                    <li class="hideOnMobile"><a href="#about">About</a></li>
+                    <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+                    <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                    <li class="hideOnMobile"><a href="#certificates">Certificates</a></li>
+                    <li class="hideOnMobile"><a href="#contact">Contact Me</a></li>
+                    <li class="menu" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="Home">
+            <div class="leftSection text">Hi, My name is <span class="purple">Smit</span>
+                <div class="text">and I am a passionate</div>
+                <span id="element" class="text"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/uc?export=download&id=1jOcX_3wxsdhL4vhdUQ_hYv9U-YWPWxCx"
+                        download="Smit_Patel_Resume.pdf"><button class="btn">Download Resume</button></a>
+
+                    <!-- Chat container with the bot iframe -->
+                    
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Images/Image3.png">
+            </div>
+        </section>
+        <section id="about" class="hidden">
+
+            <div class="leftSection">
+                <h2 class="purple purple2">About Me</h2>
+                <div id="Aboutme">
+                    <p>Hello! I’m Smit Patel, a computer science student passionate about technology, coding, and
+                        solving complex problems. Currently enrolled in the Computer System Technician - Software
+                        Support program at Mohawk College, I'm continuously learning and refining my skills in
+                        programming, data science, and backend development.</p>
+                    <p>Originally from India, I moved to Canada to deepen my knowledge and gain hands-on experience in
+                        software support. My goal is to create impactful solutions and develop a career in tech that
+                        challenges me to grow every day.</p>
+                    <p>When I’m not coding, I enjoy creating Animations, Reading, and exploring the latest tech trends.
+                        Let’s connect and build something amazing together!</p>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="skills" class="hidden">
+            <h2 class="purple skills2">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <p>Python, Java, C# (.NET Framework)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Languages</h3>
+                    <p>HTML, JavaScript, React.js, PHP, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools and Frameworks</h3>
+                    <p>Visual Studio, WordPress</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Additional Skills</h3>
+                    <p>Technical Writing, Project Management, Communication</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="hidden">
+            <h2 class="skills2">Projects</h2>
+            <div class="container">
+                <div class="row filter-container mx-auto">
+
+                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+                        <div>
+                            <a href="projects/Project1/index.html" target="_blank"><img src="Images/todoList.PNG"
+                                    class="img-fluid" alt=""
+                                    style="height: 280px; width: 360px; border-radius: 6%;"></a>
+                        </div>
+                    </div>
+        </section>
+        <section id="certificates" class="hidden">
+            <h2 class="purple">My Certificates</h2>
+            <div class="certificate-container">
+                <div class="certificate-card">
+                    <h3>Artificial Intelligence Foundations: Thinking Machines</h3>
+                    <p>#machinelearning #artificialintelligence</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>JavaScript Essential Training</h3>
+                    <p>#javascript #webdevelopment</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Learning ECMAScript 6+ (ES6+)</h3>
+                    <p>#ECMAScript6 #javascript</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>React.js Essential Training</h3>
+                    <p>#reactjs #webdevelopment</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Node.js Essential Training</h3>
+                    <p>#nodejs #backenddevelopment</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>If you have any questions or would like to work together, feel free to reach out!</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:patelsmith2023@gmail.com"
+                                class="email">patelsmith2023@gmail.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+19059667254">+1 (905)966-7254</a></li>
+
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="f08345b1-678e-41c9-8e15-2c1b47300060" <input
+                            type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <button id="openChatButton" onclick="toggleChat()">Do you need any specific information?</button>
+            <button id="closeChatBox" onclick="closeChat()">Close Chat</button>
+
+<!-- Chat container with the bot iframe -->
+<div id="chatContainer">
+    <iframe 
+        src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/11/07/12/20241107121957-ICZ9JR2Y.json" 
+        width="100%" 
+        height="100%" 
+        frameborder="0">
+    </iframe>
+</div>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Smit's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li class="twitter"><a href="https://x.com/smit_patel16" target="_blank"><img
+                                src="Images/twitter.png"></a></li>
+                    <li class="linkdin"><a href="https://www.linkedin.com/in/smit-patel-124a801b4/" target="_blank"><img
+                                src="Images/linkedin.png"></a></li>
+                    <li class="github"><a href="https://github.com/smitpatel-code" target="_blank"><img
+                                src="Images/github-logo.png"></a></li>
+                </ul>
+            </div>
+            <div class="footer-second"></div>
+            <div class="footer-forth"></div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'UI/UX Designer', 'Technical Architect', 'QA Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
